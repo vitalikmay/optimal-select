@@ -145,6 +145,9 @@ function findAttributesPattern (priority, element, ignore) {
       }
       return -1
     }
+    if (currPos === -1) {
+      return 1
+    }
     return currPos - nextPos
   })
 
